@@ -8,9 +8,9 @@ function getValue() {
     let eRes = document.getElementById('eRes');
     let eoRes = document.getElementById('eoRes');
     let eopRes = document.getElementById('eopRes');
-    eRes.textContent = 'E, kg : ' + eNum;
-    eoRes.textContent = 'E + O, kg : ' + eo.toFixed(2);
-    eopRes.textContent = 'E + O + P, kg : ' + eop.toFixed(2);
+    eRes.textContent = 'B, kg : ' + eNum;
+    eoRes.textContent = 'B + H, kg : ' + eo.toFixed(2);
+    eopRes.textContent = 'B + H + T, kg : ' + eop.toFixed(2);
 }
 
 let calc = document.getElementById('calc');
