@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Orbitron&family=Titillium+Web:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 
 html {
-    font-family: 'Fjalla One', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
     background-color: #111;
     color: #dddddd;
     font-size: x-large;
@@ -10,6 +10,10 @@ html {
 .header {
     text-align: center;
     color: #2889f9;
+}
+
+h1 {
+    margin: 30px;
 }
 
 p {
@@ -31,15 +35,29 @@ input {
 
 .result {
     margin-top: 30px;
+    color: #e2f6b5;
 }
 
 #calc {
     top: 50%;
     background-color: #d6145f;
-    color: #fff;
+    color: #eee;
     border: none; 
     border-radius: 10px; 
-    padding: 15px;
+    padding: 20px 180px;
     min-height: 30px; 
     min-width: 120px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.profiles > button {
+    margin-top: 30px;
+    padding: 15px 70px;
+    background-color: #9a0edb;
+    color: #eee;
+    border: none; 
+    border-radius: 10px; 
+    font-size: medium;
+    font-weight: bold;
 }
