@@ -22,6 +22,7 @@ p {
 }
 
 input {
+    font-weight: bold;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
@@ -29,28 +30,49 @@ input {
 
 .result {
     margin-top: 30px;
-    color: #ddff00;
+    color: #d8f03b;
 }
 
 #calc {
-    align-items: center;
     background-color: #d6145f;
-    color: #eee;
-    border: none; 
-    border-radius: 10px; 
-    padding: 20px 140px;
-    margin: 20px;
-    font-size: medium;
-    font-weight: bold;
+    width: 300px;
 }
 
-.profiles > button {
-    margin-top: 10px;
-    padding: 15px 50px;
-    background-color: #9a0edb;
-    color: #eee;
-    border: none; 
+button {
+    position: relative;
+    background-color: #04AA6D;
+    border: none;
     border-radius: 10px; 
-    font-size: medium;
+    font-size: large;
     font-weight: bold;
+    color: #FFFFFF;
+    padding: 20px;
+    margin: 10px 5px;
+    width: 140px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button:after {
+    content: "";
+    background: #4c52c2;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 1s
+}
+
+button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
 }
